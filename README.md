@@ -57,7 +57,7 @@ sudo add-apt-repository ppa:mozillateam/firefox-next && sudo apt update && sudo 
 
 Make sure the new version of Firefox is in the path. If not manually add it.
 
-2) Install the Geckodriver for your operating system and make sure it's in your path, on Mac you can place it in `/usr/local/bin`, on ChromeOS you can place it in `/usr/local/bin`, and on Linux you can place it in `/usr/bin`.
+2) Install the Geckodriver for your operating system and make sure it's in your path, on Mac you can place it in `/usr/local/bin`, on ChromeOS you can place it in `/usr/local/bin`, and on Linux you can place it in `/usr/bin`. `tar zxvf geckodriver-v*`
 
 Download the latest version of Geckodriver here:
 
@@ -72,6 +72,7 @@ On Linux install the following prerequisites:
 sudo apt-get install build-essential cmake
 sudo apt-get install libgtk-3-dev
 sudo apt-get install libboost-all-dev
+sudo apt-get install xvfb x11-utils # When trying to run everything headless in a server
 ```
 
 On Linux & macOS finish the install with:
